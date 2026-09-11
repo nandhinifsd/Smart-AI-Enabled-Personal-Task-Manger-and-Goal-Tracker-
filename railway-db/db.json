@@ -1,0 +1,1175 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstname": "Nandhini",
+      "lastname": "Sivakumar",
+      "email": "nandhini@example.com",
+      "phoneNumber": "8675678912",
+      "password": "Dev@1234",
+      "securityQuestion": "What is your favorite color?",
+      "securityAnswer": "black"
+    },
+    {
+      "firstname": "srinidhi",
+      "lastname": "sivakumar",
+      "phoneNumber": "8012456789",
+      "email": "srinidhi@gmail.com",
+      "password": "Srinidhi@1234",
+      "securityQuestion": "What is your favorite color?",
+      "securityAnswer": "pink",
+      "id": "kaU3EN-tqUk"
+    },
+    {
+      "firstname": "sivakumar",
+      "lastname": "nandhini",
+      "phoneNumber": "9876545678",
+      "email": "siva@gmail.com",
+      "password": "Siva@1234",
+      "securityQuestion": "What is your favorite color?",
+      "securityAnswer": "blue",
+      "id": "2pgbeoy2jqo"
+    },
+    {
+      "firstname": "banu",
+      "lastname": "rekha",
+      "phoneNumber": "9750177077",
+      "email": "banu@gmail.com",
+      "password": "Banu@1234",
+      "securityQuestion": "What is your childhood nickname?",
+      "securityAnswer": "banu",
+      "id": "Xdph4r8roCk"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task001",
+      "userId": "Xdph4r8roCk",
+      "goalId": "goal001",
+      "taskName": "Learn Redux",
+      "dueDate": "2026-09-11",
+      "priority": "High",
+      "todoToday": true,
+      "completed": false
+    },
+    {
+      "id": "task002",
+      "userId": "Xdph4r8roCk",
+      "goalId": "goal001",
+      "taskName": "Practice Redux Toolkit",
+      "dueDate": "2026-09-12",
+      "priority": "Medium",
+      "todoToday": true,
+      "completed": false
+    },
+    {
+      "id": "task003",
+      "userId": "Xdph4r8roCk",
+      "goalId": "goal001",
+      "taskName": "Read React documentation",
+      "dueDate": "2026-09-15",
+      "priority": "Low",
+      "todoToday": false,
+      "completed": false
+    },
+    {
+      "id": "task004",
+      "userId": "Xdph4r8roCk",
+      "goalId": "goal002",
+      "taskName": "Complete workout",
+      "dueDate": "2026-09-11",
+      "priority": "High",
+      "todoToday": true,
+      "completed": false
+    },
+    {
+      "id": "task005",
+      "userId": "anotherUser",
+      "goalId": "goal003",
+      "taskName": "Other user's task",
+      "dueDate": "2026-09-11",
+      "priority": "Medium",
+      "todoToday": true,
+      "completed": false
+    },
+    {
+      "userid": "Xdph4r8roCk",
+      "title": "buy groceries for my home",
+      "category": "Home needs",
+      "priority": "Medium",
+      "dueDate": "2026-09-11T06:21:48.886Z",
+      "completed": false,
+      "completedDate": "",
+      "source": "standalone",
+      "id": "lY2dzvns9Os"
+    },
+    {
+      "userid": "Xdph4r8roCk",
+      "title": "clean refridgrator",
+      "category": "cleaning",
+      "priority": "High",
+      "dueDate": "2026-09-11T06:22:12.583Z",
+      "completed": false,
+      "completedDate": "",
+      "source": "standalone",
+      "id": "iuX6NOUeVLc"
+    },
+    {
+      "userid": "kaU3EN-tqUk",
+      "title": "pump milk for baby  -3rd time",
+      "category": "breastfeeding",
+      "priority": "High",
+      "dueDate": "2026-09-11T06:30:38.777Z",
+      "completed": false,
+      "completedDate": "",
+      "source": "standalone",
+      "id": "x8P7_ir5Ox8"
+    },
+    {
+      "userid": "kaU3EN-tqUk",
+      "title": "Walk for an hour",
+      "category": "excersice",
+      "priority": "High",
+      "dueDate": "2026-09-11T06:30:58.627Z",
+      "completed": false,
+      "completedDate": "",
+      "source": "standalone",
+      "id": "CKXLRbLDS9c"
+    },
+    {
+      "userid": "kaU3EN-tqUk",
+      "title": "arrange my clothes",
+      "category": "cleaning",
+      "priority": "Low",
+      "dueDate": "2026-09-11T06:31:12.896Z",
+      "completed": false,
+      "completedDate": "",
+      "source": "standalone",
+      "id": "5fGGZgs_v4o"
+    }
+  ],
+  "goals": [
+    {
+      "goalName": "My must go countries",
+      "category": "Travel & Experiences",
+      "taskArray": [
+        {
+          "id": 1788545985048,
+          "taskName": "Europe",
+          "dueDate": "2030-12-31",
+          "priority": "Low",
+          "isSaved": true
+        },
+        {
+          "id": 1788546001364,
+          "taskName": "California",
+          "dueDate": "2035-12-31",
+          "priority": "Medium",
+          "isSaved": true
+        }
+      ],
+      "userid": "2pgbeoy2jqo",
+      "id": "YsqH07DyW7g"
+    },
+    {
+      "goalName": "Loose my weight -10kgs",
+      "category": "Fitness & Health",
+      "taskArray": [
+        {
+          "id": 1788547023521,
+          "taskName": "Lose 2kgs",
+          "dueDate": "2026-09-19",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": true,
+          "todoToday": false,
+          "completedDate": "2026-09-11T00:40:23.439Z"
+        },
+        {
+          "id": 1788547038364,
+          "taskName": "lose 4kgs",
+          "dueDate": "2026-09-26",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": true,
+          "todoToday": false,
+          "completedDate": "2026-09-11T00:47:11.269Z"
+        },
+        {
+          "id": 1788547051693,
+          "taskName": "lose 6kgs",
+          "dueDate": "2026-10-10",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": true,
+          "todoToday": false,
+          "completedDate": "2026-09-11T00:49:16.514Z"
+        },
+        {
+          "id": 1788547071394,
+          "taskName": "lose 8kgs",
+          "dueDate": "2026-10-17",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": true,
+          "todoToday": false,
+          "completedDate": "2026-09-11T01:00:03.792Z"
+        },
+        {
+          "id": 1788547091998,
+          "taskName": "lose 10kgs",
+          "dueDate": "2026-10-31",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": true,
+          "todoToday": false,
+          "completedDate": "2026-09-11T06:31:18.080Z"
+        }
+      ],
+      "userid": "kaU3EN-tqUk",
+      "id": "_iBfKAVnQHU"
+    },
+    {
+      "goalName": "Learn Vishnu sahasra namam",
+      "category": "Spiritual & Mindfulness",
+      "taskArray": [
+        {
+          "id": 1788610963275,
+          "taskName": "Learn (1-4) pages",
+          "dueDate": "2026-09-18",
+          "priority": "High",
+          "isSaved": true,
+          "completed": true,
+          "todoToday": false,
+          "closedDate": "2026-09-08T19:50:34.157Z"
+        },
+        {
+          "id": 1788610991927,
+          "taskName": "learn (1-8) pages",
+          "dueDate": "2026-09-25",
+          "priority": "High",
+          "isSaved": true,
+          "completed": true,
+          "todoToday": false
+        },
+        {
+          "id": 1788611021560,
+          "taskName": "Learn 1-20 pages",
+          "dueDate": "2026-09-30",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": true,
+          "todoToday": false
+        },
+        {
+          "id": 1788891847855,
+          "taskName": "Practise Vishnu Sahasranaman",
+          "description": "Practice the whole slogan for 30 mins daily till duedate",
+          "dueDate": "2026-09-25",
+          "priority": "High",
+          "isSaved": true,
+          "completed": true,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "user",
+          "completedDate": "2026-09-11T00:15:19.600Z"
+        }
+      ],
+      "userid": "Xdph4r8roCk",
+      "id": "AqwdPYWIneg"
+    },
+    {
+      "goalName": "learn react",
+      "category": "Career Development",
+      "taskArray": [
+        {
+          "id": 1788860559030,
+          "taskName": "Install Node.js and create a new React app",
+          "description": "Use npx create-react-app for a quick start\nhttps://reactjs.org/docs/create-a-new-react-app.html",
+          "dueDate": "2026-09-10",
+          "priority": "High",
+          "isSaved": true,
+          "completed": true,
+          "source": "ai",
+          "todoToday": false
+        },
+        {
+          "id": 1788860559031,
+          "taskName": "Read React component fundamentals and structure",
+          "description": "Remember components are reusable UI building blocks\nhttps://reactjs.org/docs/components-and-props.html",
+          "dueDate": "2026-09-14",
+          "priority": "High",
+          "isSaved": true,
+          "completed": true,
+          "source": "ai",
+          "todoToday": false
+        },
+        {
+          "id": 1788860559032,
+          "taskName": "Create a simple functional component with JSX",
+          "description": "Use arrow functions for concise syntax\nhttps://www.youtube.com/watch?v=Ke90Tje7VS0",
+          "dueDate": "2026-09-16",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "source": "ai",
+          "todoToday": true,
+          "completedDate": ""
+        },
+        {
+          "id": 1788860559033,
+          "taskName": "Pass props to child components for dynamic data",
+          "description": "Destructure props to keep code readable\nhttps://reactjs.org/docs/components-and-props.html#passing-props-to-a-component",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "source": "ai",
+          "todoToday": true,
+          "completedDate": ""
+        },
+        {
+          "id": 1788860559034,
+          "taskName": "Implement state with the useState hook",
+          "description": "Initialize state with simple primitives first\nhttps://reactjs.org/docs/hooks-state.html",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "source": "ai",
+          "todoToday": true,
+          "completedDate": ""
+        },
+        {
+          "id": 1788860559035,
+          "taskName": "Add button click event handling in a component",
+          "description": "Use arrow functions to avoid bind issues\nhttps://reactjs.org/docs/handling-events.html",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788860559036,
+          "taskName": "Render lists with array.map and key props",
+          "description": "Ensure each item has a unique key\nhttps://reactjs.org/docs/lists-and-keys.html",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788860559037,
+          "taskName": "Show/hide content with conditional rendering",
+          "description": "Use ternary or logical && for simple conditions\nhttps://reactjs.org/docs/conditional-rendering.html",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788860559038,
+          "taskName": "Compose components by nesting children",
+          "description": "Pass content through props.children for flexibility\nhttps://reactjs.org/docs/composition.html",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788860559039,
+          "taskName": "Add component‑scoped CSS with CSS modules",
+          "description": "Import styles as an object for isolation\nhttps://create-react-app.dev/docs/adding-a-css-modules-stylesheet/",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788860559040,
+          "taskName": "Set up routing with React Router",
+          "description": "Wrap app in BrowserRouter and define Routes\nhttps://reactrouter.com/docs/en/v6/getting-started/overview",
+          "dueDate": "",
+          "priority": "Low",
+          "isSaved": true,
+          "completed": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788860559041,
+          "taskName": "Fetch API data using useEffect and async/await",
+          "description": "Handle loading and error states gracefully\nhttps://reactjs.org/docs/hooks-effect.html#example-using-an-async-function-within-useeffect",
+          "dueDate": "",
+          "priority": "Low",
+          "isSaved": true,
+          "completed": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788860559042,
+          "taskName": "Create global state with React Context API",
+          "description": "Wrap provider around components needing shared data\nhttps://reactjs.org/docs/context.html",
+          "dueDate": "",
+          "priority": "Low",
+          "isSaved": true,
+          "completed": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788860559043,
+          "taskName": "Deploy the app to Netlify from GitHub",
+          "description": "Push code to GitHub then connect to Netlify\nhttps://docs.netlify.com/configure-builds/get-started/#deploy-a-site",
+          "dueDate": "",
+          "priority": "Low",
+          "isSaved": true,
+          "completed": false,
+          "source": "ai"
+        }
+      ],
+      "userid": "Xdph4r8roCk",
+      "id": "qcvyMQt_Xog"
+    },
+    {
+      "goalName": "learn gardening",
+      "category": "Home Organisation",
+      "taskArray": [
+        {
+          "id": 1788864600844,
+          "taskName": "Choose container and herbs",
+          "description": "Select pots and herbs for beginner container garden.\nQuick Tips: Use sturdy pots, good drainage, bright spot.",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": true,
+          "source": "ai",
+          "todoToday": false,
+          "completedDate": "2026-09-10T23:36:57.253Z"
+        },
+        {
+          "id": 1788864600845,
+          "taskName": "Prepare soil and compost",
+          "description": "Mix potting mix with compost, add perlite for drainage.\nQuick Tips: Avoid using garden soil; use commercial mix.",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": true,
+          "source": "ai",
+          "todoToday": false,
+          "completedDate": "2026-09-10T23:41:40.342Z"
+        },
+        {
+          "id": 1788864600846,
+          "taskName": "Plant seeds and seedlings",
+          "description": "Plant seeds at recommended depth, cover lightly.\nQuick Tips: Water gently, keep soil moist but not soggy.",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": true,
+          "source": "ai",
+          "todoToday": false,
+          "completedDate": "2026-09-10T23:41:44.925Z"
+        },
+        {
+          "id": 1788864600847,
+          "taskName": "Watering routine",
+          "description": "Water plants once a day, early morning preferred.\nQuick Tips: Check soil moisture before watering; avoid overwatering.",
+          "dueDate": "",
+          "priority": "Low",
+          "isSaved": true,
+          "completed": true,
+          "source": "ai",
+          "todoToday": false,
+          "completedDate": "2026-09-11T00:31:51.792Z"
+        },
+        {
+          "id": 1788864600848,
+          "taskName": "Fertilizing basics",
+          "description": "Apply balanced fertilizer every 2 weeks monthly.\nQuick Tips: Follow package instructions; avoid excess nitrogen.",
+          "dueDate": "",
+          "priority": "Low",
+          "isSaved": true,
+          "completed": true,
+          "source": "ai",
+          "todoToday": false,
+          "completedDate": "2026-09-11T01:00:56.017Z"
+        },
+        {
+          "id": 1788864600849,
+          "taskName": "Pest prevention",
+          "description": "Inspect leaves, use natural repellents daily.\nQuick Tips: Introduce beneficial insects like ladybugs.",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": true,
+          "source": "ai",
+          "todoToday": false,
+          "completedDate": "2026-09-11T01:06:11.903Z"
+        }
+      ],
+      "userid": "Xdph4r8roCk",
+      "id": "BfzKv837AkM"
+    },
+    {
+      "goalName": "learn tanjore painting",
+      "category": "Hobbies & Creativity",
+      "taskArray": [
+        {
+          "id": 1788887645070,
+          "taskName": "Learn Basics",
+          "description": "Research basic principles and history of tanjore painting.\nQuick Tips: Take notes, create a mind map of key concepts.",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": true,
+          "closedDate": "",
+          "todoToday": true,
+          "source": "ai"
+        },
+        {
+          "id": 1788887645071,
+          "taskName": "Gather Materials",
+          "description": "Gather essential materials: brushes, paper, pigments.\nQuick Tips: Use natural dyes for authentic colors; keep a tidy workspace.",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": true,
+          "source": "ai",
+          "completedDate": ""
+        },
+        {
+          "id": 1788887645072,
+          "taskName": "Sketch Motifs",
+          "description": "Sketch simple motifs and outlines with pencil.\nQuick Tips: Start with light lines, refine shapes gradually.",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": true,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai",
+          "completedDate": "2026-09-11T00:08:54.486Z"
+        },
+        {
+          "id": 1788887645073,
+          "taskName": "Mix Palette",
+          "description": "Mix pigments to create traditional color palette.\nQuick Tips: Test colors on a scrap sheet before final mixing.",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": true,
+          "source": "ai",
+          "completedDate": ""
+        },
+        {
+          "id": 1788887645074,
+          "taskName": "Brush Practice",
+          "description": "Practice brush strokes: straight lines, curves, loops.\nQuick Tips: Hold brush at a 30-degree angle for smooth strokes.",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788887645075,
+          "taskName": "First Layer",
+          "description": "Apply first layer: light base, gentle coverage.\nQuick Tips: Use thin layers to avoid cracking; let dry fully.",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788887645076,
+          "taskName": "Finalize Piece",
+          "description": "Finalize piece: add details, varnish, evaluate for critique.\nQuick Tips: Inspect for symmetry; apply varnish in thin coats.",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788887782164,
+          "taskName": "complete muck work",
+          "dueDate": "",
+          "priority": "High",
+          "description": "Muck work needs detailed attention and patience to make intricate designs",
+          "isSaved": true,
+          "completed": false,
+          "status": "close",
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788887814677,
+          "taskName": "complete gold foil work",
+          "dueDate": "",
+          "priority": "High",
+          "description": "",
+          "isSaved": true,
+          "completed": false,
+          "status": "close",
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788887838625,
+          "taskName": "complete paintings",
+          "dueDate": "",
+          "priority": "Medium",
+          "description": "",
+          "isSaved": true,
+          "completed": false,
+          "status": "close",
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788895134460,
+          "taskName": "storing artwork until framing",
+          "description": "the artwork must be completely dried and dusted with soft brush and wraped with cling wrap until its framed",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "user"
+        }
+      ],
+      "userid": "Xdph4r8roCk",
+      "id": "EevaXMDLV_w"
+    },
+    {
+      "goalName": "Start a Amazon DropShipping Buisness",
+      "category": "Business Development",
+      "taskArray": [
+        {
+          "id": 1788901385505,
+          "taskName": "Research Niches",
+          "description": "Identify top 5 profitable Amazon niches for dropshipping\nQuick Tips: Use Amazon Best Sellers, Jungle Scout, and keep niches specific",
+          "dueDate": "2026-09-07",
+          "priority": "Low",
+          "isSaved": true,
+          "completed": true,
+          "closedDate": "2026-09-08T21:07:17.018Z",
+          "todoToday": true,
+          "source": "ai"
+        },
+        {
+          "id": 1788901385506,
+          "taskName": "Set up Seller Account",
+          "description": "Register for Amazon Seller Central and complete profile\nQuick Tips: Choose individual or professional based on expected volume, prepare tax info",
+          "dueDate": "2026-09-12",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": true,
+          "closedDate": "",
+          "todoToday": true,
+          "source": "ai"
+        },
+        {
+          "id": 1788901385507,
+          "taskName": "Find Suppliers",
+          "description": "Search AliExpress for suppliers with fast shipping\nQuick Tips: Filter by buyer rating 90%+, order minimum 5 units, read reviews",
+          "dueDate": "2026-09-14",
+          "priority": "High",
+          "isSaved": true,
+          "completed": true,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788901385508,
+          "taskName": "Draft Listings",
+          "description": "Draft product titles and bullet points for listings\nQuick Tips: Keep titles 80 characters, include key search terms, use bullets for benefits",
+          "dueDate": "2026-09-15",
+          "priority": "High",
+          "isSaved": true,
+          "completed": true,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai",
+          "completedDate": "2026-09-11T06:21:21.358Z"
+        },
+        {
+          "id": 1788901385509,
+          "taskName": "Set Pricing",
+          "description": "Calculate costs and set competitive selling price\nQuick Tips: Factor Amazon fees, shipping, supplier cost, add 10-15% margin",
+          "dueDate": "2026-09-16",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": true,
+          "source": "ai",
+          "completedDate": ""
+        },
+        {
+          "id": 1788901385510,
+          "taskName": "Choose Fulfillment",
+          "description": "Decide on fulfillment: FBA or FBM, configure\nQuick Tips: FBA gives better visibility, FBM offers full control over shipping",
+          "dueDate": "2026-09-17",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": true,
+          "source": "ai",
+          "completedDate": ""
+        },
+        {
+          "id": 1788901385511,
+          "taskName": "Launch Listing",
+          "description": "Publish listing and track initial sales performance\nQuick Tips: Monitor feedback, adjust keywords, prepare for rapid inventory restock",
+          "dueDate": "2026-09-19",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        }
+      ],
+      "userid": "Xdph4r8roCk",
+      "id": "i-fj-wQSilc"
+    },
+    {
+      "goalName": "start a e-commerce site",
+      "category": "Business Development",
+      "taskArray": [
+        {
+          "id": 1788933193306,
+          "taskName": "task 1",
+          "dueDate": "2026-09-10",
+          "priority": "Low",
+          "description": "task 1",
+          "isSaved": true,
+          "completed": true,
+          "status": "close",
+          "closedDate": "",
+          "todoToday": false,
+          "source": "manual",
+          "completedDate": "2026-09-11T00:08:57.582Z"
+        },
+        {
+          "id": 1788933304887,
+          "taskName": "task2",
+          "dueDate": "2026-09-03",
+          "priority": "Medium",
+          "description": "task2",
+          "isSaved": true,
+          "completed": false,
+          "status": "close",
+          "closedDate": "",
+          "todoToday": true,
+          "source": "manual",
+          "completedDate": ""
+        },
+        {
+          "id": 1788933320802,
+          "taskName": "task3",
+          "dueDate": "2026-09-12",
+          "priority": "High",
+          "description": "task3",
+          "isSaved": true,
+          "completed": false,
+          "status": "close",
+          "closedDate": "",
+          "todoToday": false,
+          "source": "manual"
+        }
+      ],
+      "userid": "Xdph4r8roCk",
+      "id": "IiedAs6_B9Q"
+    },
+    {
+      "goalName": "start a home baking buisness",
+      "category": "Business Development",
+      "taskArray": [
+        {
+          "id": 1788933450650,
+          "taskName": "Market Research",
+          "description": "Research local demand, competition, and customer preferences.\nQuick Tips: Use online surveys and social media groups to gather info.",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": true,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai",
+          "completedDate": "2026-09-11T06:21:22.786Z"
+        },
+        {
+          "id": 1788933450651,
+          "taskName": "Define Products",
+          "description": "Define product types, flavors, and pricing strategy.\nQuick Tips: Start with 3-5 signature items to keep inventory simple.",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": true,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai",
+          "completedDate": "2026-09-11T06:21:23.687Z"
+        },
+        {
+          "id": 1788933450652,
+          "taskName": "Source Ingredients",
+          "description": "Find local suppliers and compare ingredient costs.\nQuick Tips: Ask for bulk discounts and build relationships.",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": true,
+          "source": "ai",
+          "completedDate": ""
+        },
+        {
+          "id": 1788933450653,
+          "taskName": "Create Brand",
+          "description": "Brainstorm brand name, logo, and tagline for your business.\nQuick Tips: Keep it memorable and relevant to your niche.",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": true,
+          "source": "ai",
+          "completedDate": ""
+        },
+        {
+          "id": 1788933450654,
+          "taskName": "Test Recipes",
+          "description": "Bake prototype batches and refine recipes for quality consistency.\nQuick Tips: Taste with a neutral panel and note adjustments.",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788933450655,
+          "taskName": "Launch Online Presence",
+          "description": "Create Instagram, Facebook, and website accounts to showcase products.\nQuick Tips: Use high-quality photos and consistent branding.",
+          "dueDate": "",
+          "priority": "Low",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1788933450656,
+          "taskName": "Plan Marketing",
+          "description": "Outline launch offers, promotions, and launch day events.\nQuick Tips: Offer limited-time discounts and invite local influencers.",
+          "dueDate": "",
+          "priority": "Low",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        }
+      ],
+      "userid": "Xdph4r8roCk",
+      "id": "9CyUUv2mrB0"
+    },
+    {
+      "goalName": "start my homebakery",
+      "category": "Business Development",
+      "taskArray": [
+        {
+          "id": 1789107133243,
+          "taskName": "Market Research",
+          "description": "Identify target customers and local competition in your area.\nQuick Tips: Use online surveys or social media polls to gather insights.",
+          "dueDate": "",
+          "priority": "Low",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": true,
+          "source": "ai",
+          "completedDate": ""
+        },
+        {
+          "id": 1789107133244,
+          "taskName": "Business Plan Outline",
+          "description": "Draft mission, vision, and short-term objectives for your bakery.\nQuick Tips: Keep it concise—aim for a one-page overview.",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107133245,
+          "taskName": "Legal & Permit Research",
+          "description": "Research licensing, insurance, and business registration requirements for home bakery.\nQuick Tips: Check local health department guidelines and state regulations.",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107133246,
+          "taskName": "Recipe Selection",
+          "description": "Choose three signature items and test recipes.\nQuick Tips: Document measurements, times, and yields for consistency.",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107133247,
+          "taskName": "Equipment Inventory",
+          "description": "List essential tools and kitchen space needed.\nQuick Tips: Prioritize multi-use appliances to save space.",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107133248,
+          "taskName": "Branding Basics",
+          "description": "Create logo, packaging ideas, and brand voice.\nQuick Tips: Use free design tools like Canva for quick prototypes.",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107133249,
+          "taskName": "Launch Plan",
+          "description": "Define launch date, promotion tactics, and pricing.\nQuick Tips: Start with local community events or a soft launch.",
+          "dueDate": "",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        }
+      ],
+      "userid": "Xdph4r8roCk",
+      "id": "uufTEr4hYyc"
+    },
+    {
+      "goalName": "Learn Basic Statistics",
+      "category": "Learning & Education",
+      "taskArray": [
+        {
+          "id": 1789107893160,
+          "taskName": "Understand Stats Basics",
+          "description": "Read intro chapter, watch 5‑min video\nQuick Tips: Take notes on key terms; pause video for clarity",
+          "dueDate": "",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": true,
+          "source": "ai",
+          "completedDate": ""
+        },
+        {
+          "id": 1789107893161,
+          "taskName": "Compute Mean Median Mode",
+          "description": "Calculate mean, median, mode of sample dataset\nQuick Tips: Use Excel or calculator; verify with formulas",
+          "dueDate": "2026-09-13",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107893162,
+          "taskName": "Standard Deviation Basics",
+          "description": "Compute SD for sample dataset using Excel\nQuick Tips: Use STDEV.S function; check consistency",
+          "dueDate": "2026-09-14",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107893163,
+          "taskName": "Probability Fundamentals",
+          "description": "Study basic probability rules, events independence, conditional probability\nQuick Tips: Create flashcards for probability terms; practice with dice",
+          "dueDate": "2026-09-15",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107893164,
+          "taskName": "Normal Distribution Basics",
+          "description": "Learn properties of normal distribution, z‑scores and standardization\nQuick Tips: Visualize bell curve; use z‑score calculator",
+          "dueDate": "2026-09-16",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107893165,
+          "taskName": "Hypothesis Testing Intro",
+          "description": "Understand null, alternative hypotheses, p‑values and significance levels\nQuick Tips: Practice with simple t‑test example; note thresholds",
+          "dueDate": "2026-09-17",
+          "priority": "High",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107893166,
+          "taskName": "Review & Practice Quiz",
+          "description": "Take online quiz covering all topics learned\nQuick Tips: Review wrong answers; repeat until confidence high",
+          "dueDate": "2026-09-18",
+          "priority": "Low",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107910970,
+          "taskName": "Basics Overview",
+          "description": "Read definitions, types, and basic concepts today.\nQuick Tips: Take notes of key terms, ask questions.",
+          "dueDate": "2026-09-19",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107910971,
+          "taskName": "Calculate Measures",
+          "description": "Compute mean, median, mode of sample data.\nQuick Tips: Use spreadsheets or calculator for quick calculations.",
+          "dueDate": "2026-09-20",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107910972,
+          "taskName": "Understand Variability",
+          "description": "Learn standard deviation, variance, range and interquartile range.\nQuick Tips: Visualize data spread using box plots.",
+          "dueDate": "2026-09-21",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107910973,
+          "taskName": "Probability Basics",
+          "description": "Explore events, outcomes, probability rules and complements.\nQuick Tips: Practice with coin tosses and dice rolls.",
+          "dueDate": "2026-09-22",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107910974,
+          "taskName": "Probability Distributions",
+          "description": "Study normal, binomial, and Poisson distribution shapes.\nQuick Tips: Use z-scores to standardize normal data.",
+          "dueDate": "2026-09-23",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107910975,
+          "taskName": "Inference Basics",
+          "description": "Compare sample vs population, margin of error, confidence intervals.\nQuick Tips: Remember 95% confidence is common in studies.",
+          "dueDate": "2026-09-25",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        },
+        {
+          "id": 1789107910976,
+          "taskName": "Review & Practice",
+          "description": "Complete practice quiz on basic statistics concepts.\nQuick Tips: Review incorrect answers for deeper understanding.",
+          "dueDate": "2026-09-26",
+          "priority": "Medium",
+          "isSaved": true,
+          "completed": false,
+          "closedDate": "",
+          "todoToday": false,
+          "source": "ai"
+        }
+      ],
+      "userid": "kaU3EN-tqUk",
+      "id": "3eG4LsUuoNM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

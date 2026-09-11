@@ -1,0 +1,13 @@
+
+{
+  "name": "task-bloom-db",
+  "version": "1.0.0",
+  "description": "Task Bloom json-server database",
+  "scripts": {
+    "start": "json-server --host 0.0.0.0 db.json"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.15"
+  }
+}
+
