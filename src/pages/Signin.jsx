@@ -8,7 +8,7 @@ const Signin = () => {
   const [password, setPassword] = useState("");
   const[usernameErr,setusernameErr]=useState("");
   const[pwdErr,setpwdErr]=useState("");
-  const API="http://localhost:3000/users";
+  const API="https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/users";
   const navigate = useNavigate();
   const dispatch=useDispatch();
   async function handleSignin(e)

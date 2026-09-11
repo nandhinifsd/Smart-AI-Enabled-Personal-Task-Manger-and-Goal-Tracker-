@@ -37,7 +37,7 @@ useEffect(() => {
     async function fetchGoals() {
       console.log("inside fetch goals");
         const response = await fetch(
-            `http://localhost:3000/goals?userid=${user[0].id}`);
+            `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/goals?userid=${user[0].id}`);
         const data = await response.json();
         setUserGoals(data);
         console.log("userGoals")
@@ -225,7 +225,20 @@ const todoTodayTasks = sortedTasks.filter(
 const completedTasks = sortedTasks.filter(
   (task) => task.completed
 );
+const handleTaskArrayChange = (updatedTaskArray) => {
+  setUserGoals((previousGoals) =>
+    previousGoals.map((goal) =>
+      goal.id === selectedGoal
+        ? {
+            ...goal,
+            taskArray: updatedTaskArray,
+          }
+        : goal
+    )
+  );
 
+  dispatch(setTasks(updatedTaskArray));
+};
   return (
   <div
   className="w-full
@@ -311,6 +324,7 @@ const completedTasks = sortedTasks.filter(
       key={task.id}
       task={task}
        goal={selectedGoalObject}
+       onTaskArrayChange={handleTaskArrayChange}
     />
     ))}
 
@@ -330,6 +344,7 @@ const completedTasks = sortedTasks.filter(
       key={task.id}
       task={task}
        goal={selectedGoalObject}
+       onTaskArrayChange={handleTaskArrayChange}
     />
   ))}
 
@@ -350,6 +365,7 @@ const completedTasks = sortedTasks.filter(
       key={task.id}
       task={task}
        goal={selectedGoalObject}
+       onTaskArrayChange={handleTaskArrayChange}
     />
      
       

@@ -56,12 +56,12 @@ const passwordRegex =
 console.log("User ID:", user?.id);
 console.log(
   "PATCH URL:",
-  `http://localhost:3000/users/${user?.id}`
+  `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/users/${user?.id}`
 );
 
       try {
     const response = await fetch(
-      `http://localhost:3000/users/${user.id}`,
+      `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/users/${user.id}`,
       {
         method: "PATCH",
         headers: {

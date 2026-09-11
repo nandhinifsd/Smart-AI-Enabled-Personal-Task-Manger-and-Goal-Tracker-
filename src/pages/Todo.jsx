@@ -40,7 +40,7 @@ const [newTodo, setNewTodo] = useState({
   try {
 
     const response = await fetch(
-      "http://localhost:3000/tasks",
+      "https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/tasks",
       {
         method: "POST",
         headers: {
@@ -96,19 +96,23 @@ async function  handleToggleTodo(todo)
 
   // Only goal tasks need to be updated in the goals database
   if (todo.source !== "goal") {
+try{
+   const updatedTodo = {
+    ...todo,
+    completed: true,
+    completedDate: new Date().toISOString(),
+  };
 
-  try {
-
-    const response = await fetch(
-      `http://localhost:3000/tasks/${todo.id}`,
-      {
-        method: "DELETE"
-      }
-    );
-
-    if (!response.ok) {
-      throw new Error("Failed to delete task");
+  await fetch(
+    `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/tasks/${todo.id}`,
+    {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedTodo),
     }
+  );
 
     // Record completion before removing the task
     recordCompletion();
@@ -117,8 +121,9 @@ async function  handleToggleTodo(todo)
     dispatch(deleteTodo(todo.id));
 
     return;
+}
 
-  } catch (error) {
+   catch (error) {
 
     console.error("Error deleting task:", error);
 
@@ -130,7 +135,7 @@ else{
 
     // 1. Fetch the goal
     const response = await fetch(
-      `http://localhost:3000/goals/${todo.goalId}`
+      `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/goals/${todo.goalId}`
     );
 
     if (!response.ok) {
@@ -161,7 +166,7 @@ else{
 
     // 3. Update the goal in db.json
     const updateResponse = await fetch(
-      `http://localhost:3000/goals/${todo.goalId}`,
+      `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/goals/${todo.goalId}`,
       {
         method: "PATCH",
 
@@ -215,7 +220,7 @@ else{
       // -----------------------------
 
       const goalResponse = await fetch(
-        `http://localhost:3000/goals?userid=${user[0].id}`
+        `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/goals?userid=${user[0].id}`
       );
 
       const goals = await goalResponse.json();
@@ -254,7 +259,7 @@ else{
       // -----------------------------
 
       const taskResponse = await fetch(
-        `http://localhost:3000/tasks?userid=${user[0].id}`
+        `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/tasks?userid=${user[0].id}`
       );
 
       const standaloneTodos = await taskResponse.json();

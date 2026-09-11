@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Signup = () => {
-  const API = "http://localhost:3000/users";
+  const API = "https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/users";
   const navigate = useNavigate();
    const [formData, setFormData] = useState({
                                               firstname: "",

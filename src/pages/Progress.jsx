@@ -17,7 +17,7 @@ const user = useSelector((state) => state.auth.user);
     async function fetchGoals() {
 
       const response = await fetch(
-        `http://localhost:3000/goals?userid=${user[0].id}`
+        `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/goals?userid=${user[0].id}`
       );
 
       const data = await response.json();

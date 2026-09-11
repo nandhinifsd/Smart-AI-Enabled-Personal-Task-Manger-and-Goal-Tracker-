@@ -42,7 +42,7 @@ const emailRegex =
     try {
       // 3. Update username in database
       const response = await fetch(
-        `http://localhost:3000/users/${user.id}`,
+        `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/users/${user.id}`,
         {
           method: "PATCH",
           headers: {

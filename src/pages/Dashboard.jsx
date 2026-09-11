@@ -1,19 +1,68 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import Navbar from '../components/Navbar';
 import { useSelector } from "react-redux";
 
 const Dashboard = () => {
     const todos = useSelector((state) => state.todos);
+     const user = useSelector((state) => state.auth.user);
+    const [allCompletedTasks, setAllCompletedTasks] = useState([]);
+
   const dailyCompletionCounts =
   JSON.parse(localStorage.getItem("dailyCompletionCounts")) || {};
+
+  useEffect(() => {
+  if (!user || !user[0]?.id) return;
+
+  async function fetchCompletedTasks() {
+    try {
+      const taskResponse = await fetch(
+        `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/tasks?userid=${user[0].id}`
+      );
+
+      const standaloneTasks = await taskResponse.json();
+
+      const goalResponse = await fetch(
+        `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/goals?userid=${user[0].id}`
+      );
+
+      const goals = await goalResponse.json();
+
+      const completedGoalTasks = [];
+
+      goals.forEach((goal) => {
+        goal.taskArray.forEach((task) => {
+          if (task.completed === true) {
+            completedGoalTasks.push({
+              ...task,
+              goalId: goal.id,
+              source: "goal"
+            });
+          }
+        });
+      });
+
+      const completedStandaloneTasks = standaloneTasks.filter(
+        (task) => task.completed === true
+      );
+
+      setAllCompletedTasks([
+        ...completedGoalTasks,
+        ...completedStandaloneTasks
+      ]);
+
+    } catch (error) {
+      console.error("Error fetching completed tasks:", error);
+    }
+  }
+
+  fetchCompletedTasks();
+}, [user]);
 
     const todoCount = todos.filter(
   (todo) => !todo.completed
 ).length;
 
-const completedCount = todos.filter(
-  (todo) => todo.completed
-).length;
+const completedCount = allCompletedTasks.length;
 
 const highPriorityCount = todos.filter(
   (todo) => todo.priority === "High" && !todo.completed
@@ -86,42 +135,34 @@ for (let i = 0; i < 7; i++) {
 
   date.setHours(0, 0, 0, 0);
 
-  const count = todos.filter((todo) => {
 
-    if (!todo.completedDate) {
-      return false;
-    }
+  const count = allCompletedTasks.filter((task) => {
+  if (!task.completedDate) return false;
 
-    const completedDate = new Date(todo.completedDate);
+  const completedDate = new Date(task.completedDate);
 
-    return (
-      completedDate.getFullYear() === date.getFullYear() &&
-      completedDate.getMonth() === date.getMonth() &&
-      completedDate.getDate() === date.getDate()
-    );
-
-  }).length;
+  return (
+    completedDate.getFullYear() === date.getFullYear() &&
+    completedDate.getMonth() === date.getMonth() &&
+    completedDate.getDate() === date.getDate()
+  );
+}).length;
 
   productivityDays.push({
     day: `Day ${i + 1}`,
     date: date,
-    completedCount:
-    dailyCompletionCounts[
-      date.toISOString().split("T")[0]
-    ] || 0
+    completedCount: count
   });
 }
 
 let streakCount = 0;
 
-for (let i = 0; i < productivityDays.length; i++) {
-
+for (let i = productivityDays.length - 1; i >= 0; i--) {
   if (productivityDays[i].completedCount > 0) {
     streakCount++;
   } else {
     break;
   }
-
 }
 
 console.log("DASHBOARD TODOS:", todos);

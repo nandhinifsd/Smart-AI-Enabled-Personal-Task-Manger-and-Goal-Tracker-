@@ -65,7 +65,7 @@ const goalCategories = [
     try {
     //   console.log("4. Before fetch");
 
-        const response = await fetch("http://localhost:3000/goals", {
+        const response = await fetch("https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/goals", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
