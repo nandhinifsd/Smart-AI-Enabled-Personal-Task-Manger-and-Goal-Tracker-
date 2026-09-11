@@ -164,7 +164,7 @@ Do not add any text before or after the JSON.
 // ------------------------------------
 // Start server
 // ------------------------------------
-app.listen(PORT, () => {
+/*app.listen(PORT, () => {
 
   console.log(
     `Backend running at http://localhost:${PORT}`
@@ -174,4 +174,5 @@ app.listen(PORT, () => {
     "Groq API key loaded:",
     !!process.env.GROQ_API_KEY
   );
-});
+});*/
+module.exports = app;
