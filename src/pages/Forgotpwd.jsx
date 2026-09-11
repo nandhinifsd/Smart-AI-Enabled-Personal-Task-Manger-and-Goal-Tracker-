@@ -35,7 +35,7 @@ const Forgotpwd = () => {
     const enteredEmail = email.trim().toLowerCase();
 
     if (!enteredEmail) {
-      setError("Please enter your email address.");
+     setError("Please enter your email address.");
       return;
     }
 
@@ -125,16 +125,25 @@ const Forgotpwd = () => {
     }
 
     try {
+      
+      
+
       const response = await fetch(
         `http://localhost:3000/users/${user.id}`,
         {
-          method: "PATCH",
+          method: "PUT",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            password: newPassword,
-          }),
+      firstname:user.firstname,
+      lastname: user.lastname,
+      phoneNumber:user.phoneNumber,
+      email:user.email,
+      password:newPassword,
+      securityQuestion:user.securityQuestion,
+      securityAnswer:user.securityAnswer,
+      id:user.id}),
         }
       );
 
