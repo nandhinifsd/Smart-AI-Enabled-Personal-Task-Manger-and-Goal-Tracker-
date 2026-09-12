@@ -2,7 +2,7 @@
 export async function generateTasks(aiForm) {
   console.log("Data received by AI service:", aiForm);
 
-  const response = await fetch("http://localhost:5000/api/groq", {
+  const response = await fetch("https://smart-ai-enabled-personal-task-mang.vercel.app/api/groq", {
     method: "POST",
 
     headers: {
