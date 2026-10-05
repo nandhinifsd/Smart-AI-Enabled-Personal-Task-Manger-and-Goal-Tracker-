@@ -16,13 +16,13 @@ const Dashboard = () => {
   async function fetchCompletedTasks() {
     try {
       const taskResponse = await fetch(
-        `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/tasks?userid=${user[0].id}`
+        `https://smart-ai-enabled-personal-task-manger.onrender.com/tasks?userid=${user[0].id}`
       );
 
       const standaloneTasks = await taskResponse.json();
 
       const goalResponse = await fetch(
-        `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/goals?userid=${user[0].id}`
+        `https://smart-ai-enabled-personal-task-manger.onrender.com/goals?userid=${user[0].id}`
       );
 
       const goals = await goalResponse.json();

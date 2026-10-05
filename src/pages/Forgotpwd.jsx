@@ -46,7 +46,7 @@ const Forgotpwd = () => {
 
     try {
       const response = await fetch(
-        `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/users?email=${encodeURIComponent(
+        `https://smart-ai-enabled-personal-task-manger.onrender.com/users?email=${encodeURIComponent(
           enteredEmail
         )}`
       );
@@ -129,7 +129,7 @@ const Forgotpwd = () => {
       
 
       const response = await fetch(
-        `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/users/${user.id}`,
+        `https://smart-ai-enabled-personal-task-manger.onrender.com/users/${user.id}`,
         {
           method: "PUT",
           headers: {

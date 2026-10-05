@@ -11,7 +11,7 @@ const DeleteGoalModal = ({ goal, onClose, onGoalDeleted }) => {
     try {
 
       const response = await fetch(
-        `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/goals/${goal.id}`,
+        `https://smart-ai-enabled-personal-task-manger.onrender.com/goals/${goal.id}`,
         {
           method: "DELETE",
         }

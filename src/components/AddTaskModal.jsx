@@ -45,8 +45,7 @@ const AddTaskModal = ({ goal, onClose, onTaskAdded }) => {
 
     try {
       // Update the goal in db.json
-      const response = await fetch(
-        `https://smart-ai-enabled-personal-task-manger-and-goal-t-production.up.railway.app/goals/${goal.id}`,
+      const response = await fetch(`https://smart-ai-enabled-personal-task-manger.onrender.com/goals/${goal.id}`,
         {
           method: "PATCH",
           headers: {
